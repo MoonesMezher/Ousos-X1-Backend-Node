@@ -1,0 +1,230 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary: #3498db;
+    --primary-dark: #2980b9;
+    --secondary: #2ecc71;
+    --dark: #2c3e50;
+    --light: #ecf0f1;
+    --gray: #95a5a6;
+    --danger: #e74c3c;
+}
+
+/* Layout */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-info {
+    margin-bottom: 1rem;
+}
+
+.course-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-info p {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
+
+.course-info .highlight {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-btn {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-btn:hover {
+    background-color: var(--light);
+}
+
+.nav-btn.active {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 2rem;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    padding: 1rem;
+    background-color: var(--dark);
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.topics-list {
+    list-style: none;
+}
+
+.topic-item {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.topic-item:hover {
+    background-color: var(--light);
+}
+
+.topic-item.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.content-area {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    min-height: 500px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.topic-title {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+.content-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--primary);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.example-box, .practice-box, .question-box {
+    background-color: #f0f7ff;
+    border-left: 4px solid var(--secondary);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.question-box {
+    background-color: #fff8f0;
+    border-left: 4px solid var(--danger);
+}
+
+.code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.footer span {
+    color: black;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-height: none;
+    }
+    
+    .navigation {
+        flex-wrap: wrap;
+    }
+    
+    .nav-btn {
+        padding: 0.8rem 1rem;
+        flex: 1;
+        min-width: 120px;
+    }
+}

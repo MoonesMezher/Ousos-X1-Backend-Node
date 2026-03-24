@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portal - Frontend React Course</title>
+    <link rel="stylesheet" href="../assets/index.css">
+    <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="course-info">
+            <img class="logo" src="../assets/images/logo.jpg" alt="Ousos">
+            <h1>Frontend React Course - Ousos</h1>
+            <p>Coach: <a href="https://www.moonesmezher.com" target="_blank" class="highlight">Moones Mezher</a></p>
+        </div>
+    </header>
+
+    <div class="navigation">
+        <button class="nav-btn active">Project Portal</button>
+    </div>
+
+    <div class="container">
+        <main class="content-area fade-in">
+            <h2 class="section-title">Project Portal</h2>
+            <p>Browse all projects in the Frontend React course. Click on any project to view its content</p>
+            
+            <!-- Lectures Table -->
+            <table class="lectures-table">
+                <thead>
+                    <tr>
+                        <th width="100">Project</th>
+                        <th width="120">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="lectures-table-body">
+                    <!-- Lectures will be dynamically generated -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 <span>Ousos</span> All Rights Reserved</p>
+    </footer>
+
+    <script src="../register.js"></script>
+    <script src="../assets/projects.js"></script>
+</body>
+</html>
