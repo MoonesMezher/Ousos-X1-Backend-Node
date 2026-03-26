@@ -14,7 +14,7 @@ const lectures = [
         title: "JavaScript Fundamentals 1",
         description: "Variables, Data Types, Scopes",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
@@ -23,7 +23,7 @@ const lectures = [
         title: "JavaScript Fundamentals 2",
         description: "Functions, Loops",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {
