@@ -30,18 +30,18 @@ const lectures = [
         id: "node-4",
         number: 4,
         title: "Advanced JavaScript 1",
-        description: "Arrays, Objects, Timers, Date",
+        description: "Arrays, Objects",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
         id: "node-5",
         number: 5,
         title: "Advanced JavaScript 2",
-        description: "Promises, Error Handling",
+        description: "Timers, Date, Promises, Error Handling",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {

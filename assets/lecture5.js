@@ -9,7 +9,19 @@ const courseData = {
         {
             "id": "topic-0-last-lesson",
             "title": "Last Lesson",
-            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Arrays \n2- Mutate &amp; Not-Mutate methods\n3- SetTimeout &amp; SetInterval\n4- Date in JavaScript \n*/</code></pre>",
+            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Arrays \n2- Objects\n</code></pre>",
+            "examples": []
+        },
+                {
+            "id": "topic-4-timers",
+            "title": "Timers",
+            "content": "<h3>setInterval &amp; setTimeout</h3><pre class=\"lecture-pre\"><code>// setInterval(function, time); =&gt; time in ms\nlet i = 1;\nconst interval = setInterval(() =&gt; {\n    console.log(&quot;Hi from inside setInterval callback function&quot;, i);\n    i++;\n}, 1000); // each 1000 ms == 1 s =&gt; run the callback function\n\n// setTimeout(function, time); =&gt; time in ms\nsetTimeout(() =&gt; {\n    console.log(&quot;Hi from inside setTimeout callback function&quot;);\n}, 1000); // after 1000 ms == 1 s =&gt; run the callback function\n\n// pause set interval\nsetTimeout(() =&gt; {\n    clearInterval(interval);\n}, 3000);\n\n// Timer example:\nlet seconds = 10;\nlet remaining = seconds;\n\n// Create interval\nconst timer = setInterval(() =&gt; {\n    remaining--;\n    \n    const minutes = Math.floor(remaining / 60);\n    const seconds = remaining % 60;\n    const timeString = `${(minutes).toString()}:${String(seconds)}`;\n    \n    process.stdout.write(`\\rTime remaining: ${timeString}`);\n    \n    if (remaining &lt;= 0) {\n        clearInterval(timer);\n        console.log(&quot;\\n\\nTimer complete! 🎉&quot;);\n        process.exit();\n    }\n}, 1000);</code></pre>",
+            "examples": []
+        },
+        {
+            "id": "topic-5-date-object",
+            "title": "Date Object",
+            "content": "<h3>Working with Dates in JavaScript</h3><pre class=\"lecture-pre\"><code>const date = new Date();\n\nconsole.log(typeof date); // object\nconsole.log(date); // current date and time\nconsole.log(date.getTime()); // milliseconds since epoch\nconsole.log(date.getFullYear()); // current year\nconsole.log(date.getMonth() + 1); // current month (0-indexed)\nconsole.log(date.getDay()); // day of the week (0 = Sunday)\n\nconst date2 = new Date(&quot;Mar 8, 2020&quot;);\n\nconsole.log(date2); \nconsole.log(date2.getTime());\nconsole.log(date2.getFullYear());\nconsole.log(date2.getMonth() + 1); \nconsole.log(date2.getDay()); \n\n// Formatting dates\nconst formattedDate = `${date2.getFullYear()}-${(date2.getMonth() + 1).toString().padStart(2, '0')}-${date2.getDate().toString().padStart(2, '0')}`;\nconsole.log(formattedDate); // 2020-03-08</code></pre>",
             "examples": []
         },
         {
