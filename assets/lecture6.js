@@ -9,7 +9,13 @@ const courseData = {
         {
             "id": "topic-0-last-lesson",
             "title": "Last Lesson",
-            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Solve Task 1\n2- Semicolons (ASI)\n*/</code></pre>",
+            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Timers \n2- Date \n3- Operators \n4- Error Handling \n*/</code></pre>",
+            "examples": []
+        },
+        {
+            "id": "topic-5-promises",
+            "title": "Promises",
+            "content": "<h3>JavaScript Promises</h3><pre class=\"lecture-pre\"><code>// Promises represent the eventual completion of an asynchronous operation\n\n// Creating a promise\nconst promise = new Promise((resolve, reject) =&gt; {\n    // Simulate complex code\n    for(let i = 0; i &lt; 1_000_000_000; i++) {}\n    \n    const data = Math.random();\n    \n    if(data &lt; 0.5) {\n        resolve(data); // Success\n    } else {\n        reject(&quot;Error&quot;); // Failure\n    }\n});\n\n// Using .then() and .catch()\npromise\n    .then((data) =&gt; {\n        console.log(data);\n    })\n    .catch((err) =&gt; {\n        console.log(err);\n    })\n    .finally(() =&gt; {\n        console.log(&quot;Completed&quot;);\n    });\n\n// Converting to async/await\nconst app = async () =&gt; {\n    try {\n        const data = await promise;\n        console.log(&quot;Success:&quot;, data);\n    } catch (error) {\n        console.log(&quot;Error:&quot;, error);\n    }\n};\napp();\n\n// Real-world example: API call simulation\nfunction fetchUserData() {\n    return new Promise((resolve, reject) =&gt; {\n        setTimeout(() =&gt; {\n            const success = Math.random() &gt; 0.3;\n            if (success) {\n                resolve({ name: &quot;Alice&quot;, age: 30 });\n            } else {\n                reject(&quot;Failed to fetch user data&quot;);\n            }\n        }, 2000);\n    });\n}\n\n// Using the promise\nfetchUserData()\n    .then(user =&gt; console.log(&quot;User:&quot;, user))\n    .catch(error =&gt; console.error(&quot;Error:&quot;, error));\n\n// Using Promise.all() with arrays\nconst promise1 = Promise.resolve(3);\nconst promise2 = new Promise((resolve) =&gt; setTimeout(resolve, 100, 'foo'));\nconst promise3 = fetchUserData();\n\nPromise.all([promise1, promise2, promise3])\n    .then(values =&gt; console.log(values))\n    .catch(error =&gt; console.error(error));</code></pre>",
             "examples": []
         },
         {

@@ -41,16 +41,16 @@ const lectures = [
         title: "Advanced JavaScript 2",
         description: "Timers, Date, Promises, Error Handling",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
         id: "node-7",
-        number: 7,
+        number: 6,
         title: "Advanced JavaScript 3",
         description: "Promises, Async/Await, Event Loop, Regex",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {
