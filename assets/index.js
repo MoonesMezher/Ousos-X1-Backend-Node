@@ -39,7 +39,7 @@ const lectures = [
         id: "node-5",
         number: 5,
         title: "Advanced JavaScript 2",
-        description: "Timers, Date, Promises, Error Handling",
+        description: "Timers, Date, Error Handling",
         image: "./assets/images/logos/JS.webp",
         status: "completed",
         content: "Node"
