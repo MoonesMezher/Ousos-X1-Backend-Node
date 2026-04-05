@@ -50,16 +50,16 @@ const lectures = [
         title: "Advanced JavaScript 3",
         description: "Promises, Async/Await, Event Loop, Regex",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
-        id: "node-8",
-        number: 8,
+        id: "node-7",
+        number: 7,
         title: "Advanced JavaScript 4",
-        description: "Regex, ES6, Destructuring, OOP",
+        description: "ES6, Destructuring, OOP",
         image: "./assets/images/logos/JS.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {
