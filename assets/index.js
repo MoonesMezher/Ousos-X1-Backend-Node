@@ -59,8 +59,18 @@ const lectures = [
         title: "Advanced JavaScript 4",
         description: "ES6, Destructuring, OOP",
         image: "./assets/images/logos/JS.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
+    },
+    {
+        id: "node-8",
+        number: 7,
+        title: "Quiz",
+        description: "Quiz",
+        image: "./assets/images/logos/JS.webp",
+        status: "completed",
+        content: "Node",
+        hidden: true
     },
     {
         id: "node-13",
