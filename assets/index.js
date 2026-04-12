@@ -64,7 +64,7 @@ const lectures = [
     },
     {
         id: "node-8",
-        number: 7,
+        number: 8,
         title: "Quiz",
         description: "Quiz",
         image: "./assets/images/logos/JS.webp",
@@ -73,21 +73,21 @@ const lectures = [
         hidden: true
     },
     {
-        id: "node-13",
-        number: 13,
+        id: "node-9",
+        number: 9,
         title: "Git & Github",
         description: "Git & Github",
         image: "./assets/images/logos/github.webp",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
-        id: "node-14",
-        number: 14,
+        id: "node-10",
+        number: 10,
         title: "NodeJS",
         description: "Modules, File System, APIs",
         image: "./assets/images/logos/node.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {

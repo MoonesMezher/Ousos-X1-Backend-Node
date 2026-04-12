@@ -4,66 +4,42 @@ const courseData = {
         "coach": "Moones Mezher",
         "center": "Ousos"
     },
-    "lectureSubtitle": "TypeScript",
+    "lectureSubtitle": "NodeJS (Modules, FS, OP, APIs)",
     "topics": [
         {
             "id": "topic-0-last-lesson",
             "title": "Last Lesson",
-            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Solve Task 2\n2- APIs &amp; JSON\n*/</code></pre>",
+            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- CLI\n2- Git\n3- Github\n4- Core Commands\n5- Branching\n6- README.md file\n7- .gitignore file\n*/</code></pre>",
             "examples": []
         },
         {
-            "id": "topic-1-info",
-            "title": "Info",
-            "content": "<h3>What is TypeScript?</h3><pre class=\"lecture-pre\"><code>// TypeScript is a superset of JavaScript developed by Microsoft that allows developers to write statically typed code. \n\n// This means you can define variable types, which can help in catching errors during development and improving code maintainability.\n\n// example: sort the rubish\n\n// Q: what did happen before typescript?</code></pre>",
+            "id": "topic-1-node-js-introduction",
+            "title": "Node.js Introduction",
+            "content": "<h3>Node.js Fundamentals</h3><pre class=\"lecture-pre\"><code>/*\n- Node is not a framework, it is a runtime. =&gt; interpreter.\n- Compiler Vs. Interpreter:\n=&gt; code =&gt; compile =&gt; machine code =&gt; output\n=&gt; code =&gt; interprete =&gt; output\n\n=&gt; Node js runtime and is not a compiler.\n\n- JS on browser BY V8 Engine =&gt; 2008: JS on server = node js\n\n- Node js is single threaded (line by line) =&gt; one thread is work\n*/</code></pre>",
             "examples": []
         },
         {
-            "id": "topic-2-installation",
-            "title": "Installation ",
-            "content": "<h3>TypeScript Installation</h3><pre class=\"lecture-pre\"><code>// 1- node js\n// 2- npm install typescript --save-dev</code></pre>",
+            "id": "topic-2-node-js-globals",
+            "title": "Node.js Globals",
+            "content": "<h3>Global Variables in Node.js</h3><pre class=\"lecture-pre\"><code>/* \n- No window in node js (because no browser) like browser (it has a window &amp; DOM)\n- node js has filesystem but in browser it does not has filesystem \n- global variables =&gt; anywhere in your application you can access them\n\nKey Global Variables:\n\n1. __dirname =&gt; path to current working directory\n2. __filename =&gt; file name\n3. require =&gt; method to use modules in common.js\n4. module =&gt; info about current module\n5. process =&gt; info about env where the program is being executed\n\nExamples:\nconsole.log(__dirname);\nconsole.log(__filename.split('\\\\')[__filename.split('\\\\').length - 1]);\nconsole.log(process.env.OS);\nprocess.stdout.write('Hi');\n*/</code></pre>",
             "examples": []
         },
         {
-            "id": "topic-3-types",
-            "title": "Types ",
-            "content": "<h3>Types in TypeScript</h3><pre class=\"lecture-pre\"><code>let carName = &quot;ooo&quot;;\n\n// Error:\ncarName = 5;\n\nconst num: number = 10;\nconst username: string = &quot;moones&quot;;\nconst isTrue: boolean = true;\nconst list: Array&lt;string&gt; = [&quot;1&quot;, &quot;2&quot;];\nconst list2: Array&lt;number | string&gt; = [1, 2, &quot;s&quot;];\nconst list3: (string | number)[] = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, 12];\nconst undifinedVar: undefined = undefined;\nconst nullVar: null = null;\n\ntype s = string;\n\nlet a: s = &quot;oooo&quot;;\n\ntype obj = {\n    key: number;\n    val: string | null;\n}\n\nconst obj: obj = { key: 1, val: &quot;!&quot; };\n\nconst listOfObj: Array&lt;obj&gt; = [\n    { key: 0, val: &quot;0&quot; },\n    { key: 1, val: &quot;1&quot; },\n    { key: 2, val: null },\n];\n\nlet msg: string|number = &quot;Hi&quot;;\n\nmsg = &quot;Hi 2&quot;;\nmsg = 10;</code></pre>",
+            "id": "topic-3-node-js-modules",
+            "title": "Node.js Modules",
+            "content": "<h3>Modules System in Node.js</h3><pre class=\"lecture-pre\"><code>// Question: have i write all my app code in one file? =&gt; answer: yes &amp; no\n\n// Common.js =&gt; each file is module (by default) and you can change it from package.json =&gt; &quot;type&quot;: &quot;module&quot;\n\n/*\nModule Export/Import Pattern:\n\nfile: x.js\n    const x = 1;\n    module.exports = x;\n\nfile: log.js\n    const x = require('./x');\n    console.log(x);\n*/\n\nCore Built-in Modules:\n- OS Module\n- Path Module  \n- FS Module\n- HTTP Module\n- And many more...</code></pre>",
             "examples": []
         },
         {
-            "id": "topic-4-config",
-            "title": "Config",
-            "content": "<h3>TypeScript Installation</h3><pre class=\"lecture-pre\"><code>// tsc --init\n\n// tsc --watch\n\n// node --watch index.js</code></pre>",
+            "id": "topic-4-os-path-modules",
+            "title": "OS & Path Modules",
+            "content": "<h3>Operating System and Path Utilities</h3><pre class=\"lecture-pre\"><code>// OS Module\nconst os = require('os');\n\nconst currentOS = {\n    platform: os.platform(),\n    name: os.type(),\n    hostname: os.hostname(),\n    version: os.version(),\n    userInfo: os.userInfo(),\n    release: os.release(),\n    arch: os.arch(),\n    loadavg: os.loadavg(),\n    tmpdir: os.tmpdir(),\n    networkInterfaces: os.networkInterfaces(),\n};\n\n// Path Module\nconst path = require('path');\n\nconst uri = &quot;C:\\\\Users\\\\97150\\\\OneDrive/Desktop/Focal/Ass Coach/Node 8/course/code&quot;\nconsole.log(path.normalize(uri));\nconsole.log(path.sep)\nconsole.log(path.join(uri));\nconsole.log(path.basename(uri));\nconsole.log(path.resolve(uri));</code></pre>",
             "examples": []
         },
         {
-            "id": "topic-5-arrays-objects",
-            "title": "Arrays & Objects",
-            "content": "<h3>Arrays &amp; Objects in TypeScript</h3><pre class=\"lecture-pre\"><code>const arr: string[] = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;];\n\nconst arr2 = [&quot;a&quot;, &quot;b&quot;];\n\nconst arr3: Array&lt;string&gt; = [&quot;a&quot;];\n\n// Error\nconst item: number = arr[0];\nconst item: number = arr2[0];\nconst item: number = arr3[0];\n\nconst obj: { age: number, name: string } = { age: 1, name: &quot;hello&quot; };\n\ntype objectType = { age: number, name: string };\n\nconst obj1: objectType = { age: 1, name: &quot;hello&quot; };</code></pre>",
-            "examples": []
-        },
-        {
-            "id": "topic-6-functions",
-            "title": "Functions",
-            "content": "<h3>Functions in TypeScript</h3><pre class=\"lecture-pre\"><code>function sum(num1: number, num2: number): number {\n    return num1 + num2;\n}\n\nfunction printHello(value: string): void {\n    console.log(`Hello ${value}`);\n}\n\n// Error\nconst str: number[] = [1,2].map(e =&gt; e);\n\n// Error\nfunction sum(num1: number, num2: number): string {\n    return num1 + num2;\n}</code></pre>",
-            "examples": []
-        },
-        {
-            "id": "topic-7-any",
-            "title": "Any",
-            "content": "<h3>Any Type</h3><pre class=\"lecture-pre\"><code>// useful for migrating project from javascript to typescript\n\nlet title: any = &quot;Hello&quot;;\n\ntitle = 30;\ntitle = { hello: &quot;world&quot; }\ntitle = [&quot;Hello&quot;, &quot;World&quot;];\ntitle = false;\n\nlet arr: any[] = [];\n\narr.push(&quot;Hello&quot;);\narr.push(10);\narr.push({ hello: &quot;world&quot; });\narr.push([]);\n\nfunction sum(value: any): any {\n    return value + value;\n}\n\nsum(10);\nsum(&quot;A&quot;);</code></pre>",
-            "examples": []
-        },
-        {
-            "id": "topic-8-tubles",
-            "title": "Tubles",
-            "content": "<h3>Tubles in TypeScript</h3><pre class=\"lecture-pre\"><code>// they are arrays with selected types\n\nconst t1: [string, string, boolean, number] = [&quot;a&quot;, &quot;b&quot;, false, 10];\n\n// named tubles\n\nlet t2: [name: string, age: number] = [&quot;a&quot;, 10];\n\nconsole.log(t2[0]);\nconsole.log(t2[1]);</code></pre>",
-            "examples": []
-        },
-        {
-            "id": "topic-9-interfaces",
-            "title": "Interfaces",
-            "content": "<h3>Interfaces in TypeScript</h3><pre class=\"lecture-pre\"><code>interface Author {\n    name: string;\n    age: number;\n}\n\ntype x = Author\n\nconst mario: Author = {\n    name: &quot;Mario&quot;,\n    age: 10\n}\n\ninterface Post {\n    title?: string;\n    body: string;\n    readonly tags: string[];\n    createdAt: Date;\n    author: Author;\n    print(): void\n}\n\nconst post: Post = {\n    title: &quot;s&quot;,\n    body: &quot;ss&quot;,\n    tags: [&quot;sss&quot;],\n    createdAt: new Date(),\n    author: {\n        name: &quot;ss&quot;,\n        age: 10\n    },\n    print: () =&gt; {\n        console.log(&quot;SS&quot;)\n    }\n}\n\n// 1- NOTE: prop?: type; =&gt; optional property =&gt; this means that the property may or may not be present in the object.\n// 2- NOTE: readonly prop: type; =&gt; readonly property =&gt; this means the property cannot be modified after the object is created.\n// 3- NOTE: prop(): type; =&gt; method as property\n// 4- NOTE: you can create a new interface that extends an existing one. This allows you to build on top of existing structures.\n\ninterface FeaturedPost extends Post {\n    featured: boolean; // New property\n} \n\n// 5- NOTE: you can define interfaces that can be indexed with a specific type. \nThis is useful for objects that have dynamic keys.\n\ninterface StringArray {\n    [index: number]: string; // Index signature\n}\n\nlet myArray: StringArray = [&quot;Hello&quot;, &quot;World&quot;];\n\n// 6- NOTE: you can combine multiple interfaces using intersection types.\ninterface Post {\n    title: string;\n    body: string;\n}\n\ninterface Author {\n    name: string;\n}\n\ntype PostWithAuthor = Post &amp; Author;\n\n// 7- NOTE: classes can implement interfaces, ensuring that they adhere \n// to the defined structure.\n\nconst post1: Post = {\n    title: &quot;post-1&quot;,\n    body: &quot;ffffffffffffffffffffffff&quot;,\n    tags: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;],\n    createdAt: new Date(),\n    author: mario\n}\n\nfunction getAuthor(post: Post): Author {\n    return post.author;\n}\n\nconsole.log(getAuthor(post1));\n\nconst posts: Post[] = [];\n\n// Error\nposts.push(&quot;s&quot;);\n\nposts.push(post1);</code></pre>",
+            "id": "topic-5-fs-module",
+            "title": "FS Module",
+            "content": "<h3>File System Operations</h3><pre class=\"lecture-pre\"><code>const fs = require('fs');\nconst filePath = 'main.js';\nconst data = 'const x = 1;\\n// console.log(x);';\n\n// Synchronous Methods\nfs.writeFileSync(filePath, data, 'utf8');\nconst content = fs.readFileSync(filePath, 'utf-8');\nfs.unlinkSync(&quot;main.txt&quot;);\n\n// Asynchronous Methods (Callback)\nfs.writeFile('', 'hello world', (err, res) =&gt; {\n    if(err) {\n        console.log(err);\n        return;\n    }\n    console.log(res)\n});\n\nfs.readFile('main.js', 'utf8', (err, res) =&gt; {\n    if(err) {\n        console.log(err);\n        return;\n    }\n    console.log(res)\n});</code></pre>",
             "examples": []
         }
     ]

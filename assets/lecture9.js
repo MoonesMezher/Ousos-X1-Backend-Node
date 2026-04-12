@@ -9,7 +9,7 @@ const courseData = {
         {
             "id": "topic-0-last-lesson",
             "title": "Last Lesson",
-            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Solve Task 3 (Very Important)\n*/</code></pre>",
+            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Exrsice (Very Important)\n*/</code></pre>",
             "examples": []
         },
         {
