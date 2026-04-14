@@ -4,18 +4,12 @@ const courseData = {
         "coach": "Moones Mezher",
         "center": "Ousos"
     },
-    "lectureSubtitle": "HTTP Module, ExpressJS (Setup, Routing, HTTP Methods, Request & Response)",
+    "lectureSubtitle": "ExpressJS (Setup, Routing, HTTP Methods, Request & Response)",
     "topics": [
         {
             "id": "topic-0-last-lesson",
             "title": "Last Lesson",
-            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Solve Task 4\n*/</code></pre>",
-            "examples": []
-        },
-        {
-            "id": "topic-1-http-module",
-            "title": "HTTP Module",
-            "content": "<h3>Creating Web Servers with HTTP</h3><pre class=\"lecture-pre\"><code>const http = require('http');\n\n// Basic Server\nconst server = http.createServer((req, res) =&gt; {\n    if(req.method === 'GET') {\n        if(req.url === '/') {\n            return res.end(&quot;Hello, world!&quot;);\n        } else if (req.url === '/hello') {\n            return res.end(&quot;Hello, Twice&quot;);\n        }\n        return res.end('&lt;p&gt;Oops!&lt;/p&gt;&lt;a href=&quot;/&quot;&gt;Go To Home&lt;/a&gt;');\n    } \n});\n\n// REST API Implementation\nlet data = [\n    { id: 1, name: &quot;moones&quot;, age: 21 },\n    { id: 2, name: &quot;rami&quot;, age: 31 },\n    { id: 3, name: &quot;fares&quot;, age: 25 }\n];\n\n// CRUD Operations:\n// GET    /api/users       # Get all users\n// POST   /api/users       # Create new user  \n// GET    /api/users/{id}  # Get single user\n// PUT    /api/users/{id}  # Update user\n// DELETE /api/users/{id}  # Delete user\n\nconst PORT = 4000;\nconst HOSTNAME = '127.0.0.1';\nserver.listen(PORT, HOSTNAME, () =&gt; {\n    console.log('App is listening on port ${PORT} successfully');\n});</code></pre>",
+            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- NodeJS\n2- Modules\n3- OS Module\n4- Path Module \n5- FS Module\n6- HTTP Module\n*/</code></pre>",
             "examples": []
         },
         {

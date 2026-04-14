@@ -85,18 +85,18 @@ const lectures = [
         id: "node-10",
         number: 10,
         title: "NodeJS",
-        description: "Modules, File System, APIs",
+        description: "Modules, File System, HTTP Module",
         image: "./assets/images/logos/node.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
         id: "node-16",
-        number: 16,
+        number: 11,
         title: "ExpressJS 1",
-        description: "HTTP Module, ExpressJS",
+        description: "Intro to ExpressJS",
         image: "./assets/images/logos/node.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {

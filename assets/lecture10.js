@@ -41,7 +41,13 @@ const courseData = {
             "title": "FS Module",
             "content": "<h3>File System Operations</h3><pre class=\"lecture-pre\"><code>const fs = require('fs');\nconst filePath = 'main.js';\nconst data = 'const x = 1;\\n// console.log(x);';\n\n// Synchronous Methods\nfs.writeFileSync(filePath, data, 'utf8');\nconst content = fs.readFileSync(filePath, 'utf-8');\nfs.unlinkSync(&quot;main.txt&quot;);\n\n// Asynchronous Methods (Callback)\nfs.writeFile('', 'hello world', (err, res) =&gt; {\n    if(err) {\n        console.log(err);\n        return;\n    }\n    console.log(res)\n});\n\nfs.readFile('main.js', 'utf8', (err, res) =&gt; {\n    if(err) {\n        console.log(err);\n        return;\n    }\n    console.log(res)\n});</code></pre>",
             "examples": []
-        }
+        },
+        {
+            "id": "topic-1-http-module",
+            "title": "HTTP Module",
+            "content": "<h3>Creating Web Servers with HTTP</h3><pre class=\"lecture-pre\"><code>const http = require('http');\n\n// Basic Server\nconst server = http.createServer((req, res) =&gt; {\n    if(req.method === 'GET') {\n        if(req.url === '/') {\n            return res.end(&quot;Hello, world!&quot;);\n        } else if (req.url === '/hello') {\n            return res.end(&quot;Hello, Twice&quot;);\n        }\n        return res.end('&lt;p&gt;Oops!&lt;/p&gt;&lt;a href=&quot;/&quot;&gt;Go To Home&lt;/a&gt;');\n    } \n});\n\n// REST API Implementation\nlet data = [\n    { id: 1, name: &quot;moones&quot;, age: 21 },\n    { id: 2, name: &quot;rami&quot;, age: 31 },\n    { id: 3, name: &quot;fares&quot;, age: 25 }\n];\n\n// CRUD Operations:\n// GET    /api/users       # Get all users\n// POST   /api/users       # Create new user  \n// GET    /api/users/{id}  # Get single user\n// PUT    /api/users/{id}  # Update user\n// DELETE /api/users/{id}  # Delete user\n\nconst PORT = 4000;\nconst HOSTNAME = '127.0.0.1';\nserver.listen(PORT, HOSTNAME, () =&gt; {\n    console.log('App is listening on port ${PORT} successfully');\n});</code></pre>",
+            "examples": []
+        },
     ]
 };
 
