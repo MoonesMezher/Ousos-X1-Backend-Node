@@ -91,9 +91,18 @@ const lectures = [
         content: "Node"
     },
     {
-        id: "node-16",
+        id: "node-11",
         number: 11,
         title: "ExpressJS 1",
+        description: "Intro to ExpressJS",
+        image: "./assets/images/logos/node.webp",
+        status: "completed",
+        content: "Node"
+    },
+    {
+        id: "node-11",
+        number: 11,
+        title: "Recap",
         description: "Intro to ExpressJS",
         image: "./assets/images/logos/node.webp",
         status: "in-progress",
