@@ -105,16 +105,16 @@ const lectures = [
         title: "Recap",
         description: "Intro to ExpressJS",
         image: "./assets/images/logos/node.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
-        id: "node-17",
-        number: 17,
+        id: "node-12",
+        number: 12,
         title: "ExpressJS 2",
         description: "NPM, Middlewares, Folder Structure",
         image: "./assets/images/logos/node.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {
