@@ -101,7 +101,7 @@ const lectures = [
     },
     {
         id: "node-11",
-        number: 11,
+        number: 12,
         title: "Recap",
         description: "Intro to ExpressJS",
         image: "./assets/images/logos/node.webp",
@@ -110,11 +110,30 @@ const lectures = [
     },
     {
         id: "node-12",
-        number: 12,
+        number: 13,
         title: "ExpressJS 2",
-        description: "NPM, Middlewares, Folder Structure",
+        description: "NPM, Request Query, Middlewares",
         image: "./assets/images/logos/node.webp",
+        status: "completed",
+        content: "Node"
+    },
+    {
+        id: "node-13",
+        number: 14,
+        title: "Exam",
+        description: "Exam",
+        image: "./assets/images/logos/Project.webp",
         status: "in-progress",
+        content: "Node",
+        hidden: true
+    },
+    {
+        id: "node-13",
+        number: 15,
+        title: "ExpressJS 3",
+        description: "Folder Structure, Postman",
+        image: "./assets/images/logos/node.webp",
+        status: "not-started",
         content: "Node"
     },
     {

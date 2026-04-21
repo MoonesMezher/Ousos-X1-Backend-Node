@@ -1,5 +1,5 @@
-const STATIC_CACHE_VERSION = 'v12'; // ← Increment this when you update assets
-const DYNAMIC_CACHE_VERSION = 'dynamic-v12'; // ← Increment this too
+const STATIC_CACHE_VERSION = 'v13'; // ← Increment this when you update assets
+const DYNAMIC_CACHE_VERSION = 'dynamic-v13'; // ← Increment this too
 const SITE_STATIC_CACHE_NAME = `pwa-cache-${STATIC_CACHE_VERSION}`;
 const SITE_DYNAMIC_CACHE_NAME = `pwa-cache-${DYNAMIC_CACHE_VERSION}`;
 
