@@ -9,7 +9,7 @@ const courseData = {
         {
             "id": "topic-0-last-lesson",
             "title": "Last Lesson",
-            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Postman\n2- Plop \n3- Database Fundamentals\n4- MongoDB\n5- MongoDB Setup\n*/</code></pre>",
+            "content": "<h3>Last Lesson Recap</h3><pre class=\"lecture-pre\"><code>/*\n1- Postman\n2- Database Fundamentals\n3- MongoDB\n4- MongoDB Setup\n*/</code></pre>",
             "examples": []
         },
         {

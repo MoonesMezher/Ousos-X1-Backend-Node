@@ -123,7 +123,7 @@ const lectures = [
         title: "Exam",
         description: "Exam",
         image: "./assets/images/logos/Project.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node",
         hidden: true
     },
@@ -131,27 +131,27 @@ const lectures = [
         id: "node-13",
         number: 15,
         title: "ExpressJS 3",
-        description: "Folder Structure, Postman",
+        description: "Folder Structure",
         image: "./assets/images/logos/node.webp",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
-        id: "node-19",
-        number: 19,
+        id: "node-16",
+        number: 16,
         title: "Postman & Databases",
-        description: "Postman, PLop, Databases, Intro to MongoDB",
+        description: "Postman, Databases, Intro to MongoDB",
         image: "./assets/images/logos/mongodb.webp",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
-        id: "node-20",
-        number: 20,
-        title: "MongoDB & Intro to Mongoose",
-        description: "MongoDB, Mongoose",
+        id: "node-17",
+        number: 17,
+        title: "Mongoose",
+        description: "Mongoose",
         image: "./assets/images/logos/mongodb.webp",
-        status: "not-started",
+        status: "in-progress",
         content: "Node"
     },
     {
