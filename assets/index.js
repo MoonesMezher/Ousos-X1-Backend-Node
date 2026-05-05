@@ -148,28 +148,28 @@ const lectures = [
     {
         id: "node-17",
         number: 17,
-        title: "Mongoose",
+        title: "Mongoose 1",
         description: "Mongoose",
         image: "./assets/images/logos/mongodb.webp",
-        status: "in-progress",
+        status: "completed",
         content: "Node"
     },
     {
         id: "node-21",
         number: 21,
-        title: "Mongoose 1",
-        description: "Mongoose (Schema, Chaining, Populate)",
+        title: "Mongoose 2",
+        description: "Mongoose (Schema, Chaining, Pagination)",
         image: "./assets/images/logos/mongodb.webp",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
         id: "node-23",
-        number: 23,
-        title: "Mongoose 2",
+        number: 22,
+        title: "Mongoose 3",
         description: "Mongoose (Relationships, Advanced Features)",
         image: "./assets/images/logos/mongodb.webp",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
