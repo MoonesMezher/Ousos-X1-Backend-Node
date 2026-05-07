@@ -164,13 +164,23 @@ const lectures = [
         content: "Node"
     },
     {
-        id: "node-23",
+        id: "node-22",
         number: 22,
         title: "Mongoose 3",
         description: "Mongoose (Relationships, Advanced Features)",
         image: "./assets/images/logos/mongodb.webp",
         status: "completed",
         content: "Node"
+    },
+    {
+        id: "node-23",
+        number: 22,
+        title: "Project",
+        description: "Project: Cars Store",
+        image: "./assets/images/logos/Project.webp",
+        status: "completed",
+        content: "Node",
+        hidden: true
     },
     {
         id: "node-24",
@@ -366,7 +376,7 @@ function filterLectures() {
 }
 
 // View lecture details
-function viewLecture(lectureId) {        
+function viewLecture(lectureId) {  
     if(!lectureId) {
         alert(`Invalid Lecture Id`);
         return;
