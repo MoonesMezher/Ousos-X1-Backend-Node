@@ -156,7 +156,7 @@ const lectures = [
     },
     {
         id: "node-21",
-        number: 21,
+        number: 18,
         title: "Mongoose 2",
         description: "Mongoose (Schema, Chaining, Pagination)",
         image: "./assets/images/logos/mongodb.webp",
@@ -165,7 +165,7 @@ const lectures = [
     },
     {
         id: "node-22",
-        number: 22,
+        number: 19,
         title: "Mongoose 3",
         description: "Mongoose (Relationships, Advanced Features)",
         image: "./assets/images/logos/mongodb.webp",
@@ -174,7 +174,7 @@ const lectures = [
     },
     {
         id: "node-23",
-        number: 22,
+        number: 20,
         title: "Project",
         description: "Project: Cars Store",
         image: "./assets/images/logos/Project.webp",
@@ -184,7 +184,7 @@ const lectures = [
     },
     {
         id: "node-24",
-        number: 23,
+        number: 21,
         title: "Mongoose Relationships",
         description: "Recap, Books Store",
         image: "./assets/images/logos/mongodb.webp",
@@ -194,7 +194,17 @@ const lectures = [
     },
     {
         id: "node-24",
-        number: 24,
+        number: 22,
+        title: "Project Analayse",
+        description: "Resturant Application",
+        image: "./assets/images/logos/Project.webp",
+        status: "completed",
+        content: "Node",
+        hidden: true
+    },
+    {
+        id: "node-24",
+        number: 23,
         title: "Auth 1",
         description: "Authentication & Authorization, JWT, Cookies",
         image: "./assets/images/logos/auth.jpeg",
@@ -203,7 +213,7 @@ const lectures = [
     },
     {
         id: "node-25",
-        number: 25,
+        number: 24,
         title: "Auth 2",
         description: "Password Security, Auth Endpoints",
         image: "./assets/images/logos/auth.jpeg",
@@ -212,7 +222,7 @@ const lectures = [
     },
     {
         id: "node-26",
-        number: 26,
+        number: 25,
         title: "Auth 3",
         description: "Auth Endpoints, Auth Middleware",
         image: "./assets/images/logos/auth.jpeg",
@@ -221,7 +231,7 @@ const lectures = [
     },
     {
         id: "node-27",
-        number: 27,
+        number: 26,
         title: "Security Practices",
         description: "Seeds, Security Practices",
         image: "./assets/images/logos/auth.jpeg",
@@ -230,7 +240,7 @@ const lectures = [
     },
     {
         id: "node-28",
-        number: 28,
+        number: 27,
         title: "Advanced Security & Express Validation",
         description: "Argon2, XSS, Express Validator, Async Handler",
         image: "./assets/images/logos/auth.jpeg",
@@ -239,7 +249,7 @@ const lectures = [
     },
     {
         id: "node-30",
-        number: 30,
+        number: 28,
         title: "File Management",
         description: "Multer & Cloudinary",
         image: "./assets/images/logos/files.jpeg",
@@ -248,7 +258,7 @@ const lectures = [
     },
     {
         id: "node-32",
-        number: 32,
+        number: 29,
         title: "Email & Deployment",
         description: "Email & Deployment",
         image: "./assets/images/logos/hosting.webp",
@@ -257,7 +267,7 @@ const lectures = [
     },
     {
         id: "node-33",
-        number: 33,
+        number: 30,
         title: "Full-Stack Application Demo",
         description: "Complete real-world application with frontend-backend integration",
         image: "./assets/images/logos/Project.webp",
