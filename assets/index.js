@@ -206,18 +206,18 @@ const lectures = [
         id: "node-24",
         number: 23,
         title: "Auth 1",
-        description: "Authentication & Authorization, JWT, Cookies",
+        description: "Authentication & Authorization, JWT, Password Security, Auth Endpoints, Auth Middleware",
         image: "./assets/images/logos/auth.jpeg",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
         id: "node-25",
         number: 24,
         title: "Auth 2",
-        description: "Password Security, Auth Endpoints",
+        description: "Authorization",
         image: "./assets/images/logos/auth.jpeg",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
