@@ -223,6 +223,15 @@ const lectures = [
     {
         id: "node-26",
         number: 25,
+        title: "System Design (Example)",
+        description: "Hotel Managment System",
+        image: "./assets/images/logos/Project.webp",
+        status: "completed",
+        content: "Node"
+    },
+    {
+        id: "node-26",
+        number: 25,
         title: "Auth 3",
         description: "Auth Endpoints, Auth Middleware",
         image: "./assets/images/logos/auth.jpeg",
