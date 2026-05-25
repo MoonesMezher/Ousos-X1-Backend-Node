@@ -227,7 +227,8 @@ const lectures = [
         description: "Hotel Managment System",
         image: "./assets/images/logos/Project.webp",
         status: "completed",
-        content: "Node"
+        content: "Node",
+        hidden: true
     },
     {
         id: "node-26",
@@ -236,15 +237,16 @@ const lectures = [
         description: "Sweet Shop",
         image: "./assets/images/logos/Project.webp",
         status: "completed",
-        content: "Node"
+        content: "Node",
+        hidden: true
     },
     {
         id: "node-27",
         number: 26,
-        title: "Security Practices",
-        description: "Seeds, Security Practices",
+        title: "Security Practices & Express Validation",
+        description: "Seeds, Security Practices, XSS, Express Validator",
         image: "./assets/images/logos/auth.jpeg",
-        status: "not-started",
+        status: "completed",
         content: "Node"
     },
     {
